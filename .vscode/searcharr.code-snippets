@@ -1,0 +1,29 @@
+{
+	"Print to console": {
+		"prefix": "search arr",
+		"body": [
+			"#include<iostream>",
+			"using namespace std;\n",
+			"int $1(int arr[], int n, int key) {\n",
+			"\t$2\n",
+			"\treturn -1;",
+			"}\n",
+
+			"int main()",
+			"{",
+    		"\tint arr[] = {10, 20, 30, 40, 50, 60, 79};",
+    		"\tint n = sizeof(arr)/sizeof(int);",
+    		"\tint key;",
+			"\tcout<<\"Key = \";",
+    		"\tcin>>key;\n",
+    		"\tint index = $1(arr, n, key);",
+    		"\tif(index != -1)",
+        	"\t\tcout<<\"Element \" << key << \" is present at index \" << index << endl;",
+    		"\telse",
+        	"\t\tcout<<\"Element not found\" << endl;\n",
+			"\treturn 0;",
+			"}"
+		],
+		"description": "This is our boiler plate code for array search algorithm."
+	}
+}
