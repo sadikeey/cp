@@ -1,4 +1,6 @@
 java/*.class
+cpp/*.bin
 .cph
-.class
+*.class
+*.bin
 
