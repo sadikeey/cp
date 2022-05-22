@@ -1,1 +1,1 @@
-This is practice repo for dsa questions.
+# This is practice repo for dsa questions.

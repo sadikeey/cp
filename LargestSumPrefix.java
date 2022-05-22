@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 class LargestSumPrefix {
     int largestSubArraySum(int n, int[] arr) {
-        int[] prefix = new int[100];
+        int[] prefix = new int[n];
         prefix[0] = arr[0];
 
         for (int i = 1; i < n; i++) {

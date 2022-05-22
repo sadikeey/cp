@@ -22,8 +22,13 @@ int largestSubArraySum(int arr[], int n)
 
 int main()
 {
-    int arr[] = {-2, 3, 4, -1, 5, -12, 6, 1, 3};
-    int n = sizeof(arr) / sizeof(int);
+    // int arr[] = {-2, 3, 4, -1, 5, -12, 6, 1, 3};
+    int n; 
+    cin>>n;
+    int arr[n];
+    for(int i=0; i<n; i++){
+        cin>>arr[i];
+    }
 
     cout << largestSubArraySum(arr, n) << endl;
     return 0;

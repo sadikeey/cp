@@ -1,0 +1,28 @@
+{
+	"Print to console": {
+		"prefix": "jarr",
+		"body": [
+			"import java.util.Scanner;\n",
+			"class $1 {",
+    			"\tint $2(int n, int[] arr){",
+				"\n\t\t$3\n",
+				"\t\treturn -1;",
+    			"\t}\n",
+
+    				"\tpublic static void main(String[] args) {",
+        			"\tScanner sc = new Scanner(System.in);",
+        			"\tint n = sc.nextInt();",
+        			"\tint[] arr = new int[n];\n",
+        
+        			"\tfor(int i=0; i<n; i++)",
+            		"\tarr[i] = sc.nextInt();\n",
+
+        			"\t$1 obj = new $1();",
+        			"\tSystem.out.println(obj.$2(n, arr));",
+        			"\tsc.close();",
+					"\t}",
+			"}"
+		],
+		"description": "This is our boiler plate code for array in java."
+	}
+}
