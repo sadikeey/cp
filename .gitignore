@@ -1,18 +1,12 @@
-# ignore all
-
+# Ignore all
 *
-cpp/*
-java/*
-.cph
-*.class
-java/*.class
 
-# Unignore all withextesion
-
+# Unignore all with extensions
 !*.*
 
+# Unignore all dirs
 !*/
-!*/cpp/!*.cpp
-!*/cpp/!*.c
-!*/java/!*.java
 
+# Ignore 
+.cph 
+.class
