@@ -1,6 +1,18 @@
-java/*.class
-cpp/*.bin
+# ignore all
+
+*
+cpp/*
+java/*
 .cph
 *.class
-*.bin
+java/*.class
+
+# Unignore all withextesion
+
+!*.*
+
+!*/
+!*/cpp/!*.cpp
+!*/cpp/!*.c
+!*/java/!*.java
 
