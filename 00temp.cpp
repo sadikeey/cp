@@ -1,25 +1,21 @@
 #include <iostream>
-#include <vector>
 using namespace std;
 
-int lowerBound(vector<int> A, int Val)
+void printAllPairs(int arr[], int n)
 {
-    for (int i = 1; i <= A.size(); i++)
+
+    for (int i = 0; i < n; i++)
     {
-        if (Val == A[i])
-            return Val;
-        else if (Val > A[i - 1] && Val < A[i + 1])
-            return A[i];
+        for (int j = i + 1; j < n; j++)
+                // cout << arr[i] << "," << arr[j] << endl;
+            cout << arr[i] + arr[j] <<endl;
     }
-    return -1;
 }
 
 int main()
 {
-    vector<int> A = {-1, -1, 2, 3, 5};
-    int n;
-    cin>>n;
+    int arr[] = {1, 2, 3, 4, 5, 6};
+    int n = sizeof(arr) / sizeof(int);
 
-    cout << lowerBound(A, n) << endl;
-    return 0;
+    printAllPairs(arr, n);
 }
